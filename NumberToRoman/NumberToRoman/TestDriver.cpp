@@ -52,7 +52,10 @@ int main(int argc, char* argv[])
 			if (input_str == "test") { test(); return 1; }
 
 			int input = stoi(input_str);
-			cout << "Converting number " << input << " to Roman:  " << NumberToRoman::ToRoman(input) << endl;
+			if (input<4000)
+				cout << "Converting number " << input << " to Roman:  " << NumberToRoman::ToRoman(input) << endl;
+			else
+				cout << "Please enter input number between 1 and 4000" << endl;
 		}
 		else{
 			cout << "Please enter input number that you want to convert into roman number as command line argument!!"<<endl;
