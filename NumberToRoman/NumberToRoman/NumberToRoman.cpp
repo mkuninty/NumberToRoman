@@ -1,24 +1,20 @@
 #include"NumberToRoman.h"
+#include<vector>
 string NumberToRoman::ToRoman(int num)
 {
+	int integerIndex[] = { 10, 9, 5, 4, 1 };
+	string romanIndex[] = { "X", "IX", "V", "IV", "I" };
 	string roman = "";
+	int index = 0;
 	while (num>0)
-	{
-		if (num > 5)
+	{ 
+		if (num / integerIndex[index] > 0)
 		{
-			roman = roman + "V";
-			num = num - 5;
-		}
-		else if (num == 4)
-		{
-			roman = roman + "IV";
-			num = num - 4;
+			roman += romanIndex[index];
+			num = num - integerIndex[index];
 		}
 		else
-		{
-			roman = roman + "I";
-			num--;
-		}
+			index++;
 	}
 	return roman;
 }
@@ -26,11 +22,11 @@ string NumberToRoman::ToRoman(int num)
 #ifdef TEST
 int main()
 {
-	int num = 3;
+	int num = 39;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
-	num = 4;
+	num = 19;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
-	num = 7;
+	num = 15;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
 }
 #endif
