@@ -23,6 +23,12 @@ int main()
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
 	num = 89;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
+	num = 99;
+	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
+	num = 590;
+	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
+	num = 3999;
+	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
 }
 #endif
 

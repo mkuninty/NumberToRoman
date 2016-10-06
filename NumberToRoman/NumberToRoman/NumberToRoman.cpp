@@ -6,8 +6,8 @@ Thats because only roman multiple of ten can preceed the higher roman numeral
 */
 string NumberToRoman::ToRoman(int num)
 {
-	int integerIndex[] = { 50, 40, 49, 10, 9, 5, 4, 1 }; 
-	string romanIndex[] = { "L", "XL", "IL", "X", "IX", "V", "IV", "I" };
+	int integerIndex[] = { 1000, 900, 990, 999, 500, 400, 490, 499, 100, 90, 99, 50, 40, 49, 10, 9, 5, 4, 1 };
+	string romanIndex[] = { "M", "CM", "XM", "IM", "D", "CD", "XD", "ID", "C", "XC", "IC", "L", "XL", "IL", "X", "IX", "V", "IV", "I" };
 	string roman = "";
 	int index = 0;
 	while (num>0)
@@ -25,11 +25,11 @@ string NumberToRoman::ToRoman(int num)
 #ifdef TEST
 int main()
 {
-	int num = 49;
+	int num = 99;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
-	num = 45;
+	num = 590;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
-	num = 89;
+	num = 3999;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl; 
 }
 #endif
