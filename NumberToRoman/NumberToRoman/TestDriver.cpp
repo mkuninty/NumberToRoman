@@ -17,6 +17,12 @@ int main()
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
 	num = 15;
 	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
+	int num = 49;
+	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
+	num = 45;
+	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
+	num = 89;
+	cout << "Converting number " << num << " to Roman:  " << NumberToRoman::ToRoman(num) << endl;
 }
 #endif
 
