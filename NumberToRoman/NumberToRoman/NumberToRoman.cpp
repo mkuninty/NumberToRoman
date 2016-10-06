@@ -1,5 +1,21 @@
 #include"NumberToRoman.h"
-#include<vector>
+/////////////////////////////////////////////////////////////////////////////
+// NumberToRoman.cpp - To define function to convert integer to roman      //
+//																		   //
+// ver 1.0                                                                 //
+// ----------------------------------------------------------------------- //
+// copyright © Medha Reddy Kuninty, 2016                                   //
+// All rights granted provided that this notice is retained                //
+// ----------------------------------------------------------------------- //
+// Language:    Visual C++, Visual Studio 2015                             //
+// Platform:    ASUS SonicMaster, Core i3, Windows 10                      //		                                       
+// Author:      Medha Reddy Kuninty,Syracuse         					   //
+//              (717)-891-7128, mkuninty@syr.edu                           //
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
 /*Here while dealing with numbers above 40 substaction principle of roman numberals is not valid for few cases.
 For example, "VL" is not a valid representation of 45 (XLV is correct).
 Thats because only roman multiple of ten can preceed the higher roman numeral 
@@ -22,6 +38,8 @@ string NumberToRoman::ToRoman(int num)
 	}
 	return roman;
 }
+
+/*Test stub for Number to Roman Convertion*/
 #ifdef TEST
 int main()
 {
